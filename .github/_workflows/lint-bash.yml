@@ -1,4 +1,4 @@
-# workflows/lint-bash.yml
+# _workflows/lint-bash.yml
 #
 # Lint Bash
 # Lint and enforce good practices for Bash scripts.
@@ -9,7 +9,7 @@ on:
   pull_request:
     paths:
       - "**/*.sh"
-      - ".github/workflows/lint-bash.yml"
+      - ".github/_workflows/lint-bash.yml"
   workflow_dispatch:
 
 concurrency:
@@ -42,10 +42,10 @@ jobs:
           shopt -u globstar nullglob
 
       - name: Check Bash Scripts for "#!/bin/bash"
-        run: .github/workflows/helpers/check_shebang.sh
+        run: .github/_workflows/helpers/check_shebang.sh
 
       - name: Check Bash Scripts for "set -Eeuo pipefail"
-        run: .github/workflows/helpers/check_pipefail.sh
+        run: .github/_workflows/helpers/check_pipefail.sh
 
       - name: Run ShellCheck
-        run: python3 .github/workflows/helpers/check_shellcheck.py
+        run: python3 .github/_workflows/helpers/check_shellcheck.py

@@ -1,4 +1,4 @@
-# workflows/test-pg_sparse.yml
+# _workflows/test-pg_sparse.yml
 #
 # Test pg_sparse
 # Run unit and integration tests for the pg_sparse extension.
@@ -14,7 +14,7 @@ on:
     paths:
       - "pg_sparse/**"
       - "!pg_sparse/README.md"
-      - ".github/workflows/test-pg_sparse.yml"
+      - ".github/_workflows/test-pg_sparse.yml"
   workflow_dispatch:
     inputs:
       test_upgrade_version:
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        pg_version: [12, 13, 14, 15, 16]
+        pg_version: [ 12, 13, 14, 15, 16 ]
 
     steps:
       - name: Checkout Git Repository

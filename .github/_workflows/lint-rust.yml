@@ -1,4 +1,4 @@
-# workflows/lint-rust.yml
+# _workflows/lint-rust.yml
 #
 # Lint Rust
 # Lint Rust files using Clippy and Rustfmt.
@@ -9,7 +9,7 @@ on:
   pull_request:
     paths:
       - "**/*.rs"
-      - ".github/workflows/lint-rust.yml"
+      - ".github/_workflows/lint-rust.yml"
   workflow_dispatch:
 
 concurrency:

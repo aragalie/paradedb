@@ -1,4 +1,4 @@
-# workflows/lint-format.yml
+# _workflows/lint-format.yml
 #
 # Lint Format
 # Lint the project's file trailing spaces, line endings, and format.
@@ -31,7 +31,7 @@ jobs:
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Add Trailing Newlines
-        run: .github/workflows/helpers/lint_trailing_newlines.sh
+        run: .github/_workflows/helpers/lint_trailing_newlines.sh
 
       - name: Check for CRLF Files
         run: |

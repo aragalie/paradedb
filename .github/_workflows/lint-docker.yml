@@ -1,4 +1,4 @@
-# workflows/lint-docker.yml
+# _workflows/lint-docker.yml
 #
 # Lint Docker
 # Lint Dockerfiles using Hadolint.
@@ -9,7 +9,7 @@ on:
   pull_request:
     paths:
       - "docker/*"
-      - ".github/workflows/lint-docker.yml"
+      - ".github/_workflows/lint-docker.yml"
   workflow_dispatch:
 
 concurrency:

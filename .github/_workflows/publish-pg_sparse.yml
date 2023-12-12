@@ -1,4 +1,4 @@
-# workflows/publish-pg_sparse.yml
+# _workflows/publish-pg_sparse.yml
 #
 # Publish pg_sparse
 # Build and publish the pg_sparse extension as a .deb to GitHub Releases.

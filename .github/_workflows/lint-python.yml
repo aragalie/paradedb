@@ -1,4 +1,4 @@
-# workflows/lint-python.yml
+# _workflows/lint-python.yml
 #
 # Lint Python
 # Lint Python files using Black, Pylint, and Flake8.
@@ -9,7 +9,7 @@ on:
   pull_request:
     paths:
       - "**/*.py"
-      - ".github/workflows/lint-python.yml"
+      - ".github/_workflows/lint-python.yml"
   workflow_dispatch:
 
 concurrency:

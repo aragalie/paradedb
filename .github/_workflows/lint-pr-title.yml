@@ -1,4 +1,4 @@
-# workflows/lint-pr-title.yml
+# _workflows/lint-pr-title.yml
 #
 # Lint PR Title
 # Lint and enforce proper PR title format.

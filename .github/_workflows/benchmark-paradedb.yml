@@ -1,4 +1,4 @@
-# workflows/benchmark-paradedb.yml
+# _workflows/benchmark-paradedb.yml
 #
 # Benchmark ParadeDB
 # Benchmark ParadeDB's performance on a nightly basis. This workflow can also be triggered

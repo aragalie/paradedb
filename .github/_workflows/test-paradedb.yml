@@ -1,4 +1,4 @@
-# workflows/test-paradedb.yml
+# _workflows/test-paradedb.yml
 #
 # Test ParadeDB
 # Test building the ParadeDB Docker Image using Docker Compose. We use a ubuntu-latest-m
@@ -14,7 +14,7 @@ on:
       - dev
     paths:
       - "docker/**"
-      - ".github/workflows/test-paradedb.yml"
+      - ".github/_workflows/test-paradedb.yml"
   workflow_dispatch:
 
 concurrency:
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest-m # Size: 4-cores · 16 GB RAM · 150 GB SSD
     strategy:
       matrix:
-        pg_version: [15]
+        pg_version: [ 15 ]
 
     steps:
       - name: Checkout Git Repository

@@ -1,4 +1,4 @@
-# workflows/test-pg_bm25.yml
+# _workflows/test-pg_bm25.yml
 #
 # Test pg_bm25
 # Run unit and integration tests for the pg_bm25 extension.
@@ -14,7 +14,7 @@ on:
     paths:
       - "pg_bm25/**"
       - "!pg_bm25/README.md"
-      - ".github/workflows/test-pg_bm25.yml"
+      - ".github/_workflows/test-pg_bm25.yml"
   push:
     branches:
       - dev # Run CI on dev. This is important to fill the GitHub Actions cache in a way that pull requests can see it
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        pg_version: [12, 13, 14, 15, 16]
+        pg_version: [ 12, 13, 14, 15, 16 ]
 
     steps:
       # For the Rust cache to get filled, we need to run the CI on the dev branch after every merge. This only

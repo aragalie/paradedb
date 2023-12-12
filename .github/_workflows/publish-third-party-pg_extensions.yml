@@ -1,4 +1,4 @@
-# workflows/publish-third-party-pg_extensions.yml
+# _workflows/publish-third-party-pg_extensions.yml
 #
 # Publish Third-Party PostgreSQL Extensions
 # Build and publish the third-party PostgreSQL extensions used by ParadeDB to
@@ -13,7 +13,7 @@ on:
       - main
     paths:
       - "conf/third_party_pg_extensions.json"
-      - ".github/workflows/publish-third-party-pg_extensions.yml"
+      - ".github/_workflows/publish-third-party-pg_extensions.yml"
   workflow_dispatch:
 
 concurrency:

@@ -1,4 +1,4 @@
-# workflows/publish-github-release.yml
+# _workflows/publish-github-release.yml
 #
 # Publish GitHub Release
 # Publish the ParadeDB GitHub Release.

@@ -1,4 +1,4 @@
-# workflows/lint-yaml.yml
+# _workflows/lint-yaml.yml
 #
 # Lint YAML
 # Lint YAML files using Prettier.
